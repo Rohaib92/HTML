@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        padding: 30px;
+    }
+
+    form {
+        max-width: 800px;
+        margin: auto;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    fieldset {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 15px;
+    }
+
+    legend {
+        font-weight: bold;
+        padding: 0 10px;
+    }
+
+    label {
+        display: block;
+        margin-top: 12px;
+        font-weight: 600;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    .inline {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .row div {
+        flex: 1;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <form action="">
+        <h2>Student Registration form</h2>
+        <!-- personal info -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="row">
+                <div>
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Enter First name" id="">
+                </div>
+                <div>
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Enter Last name">
+                </div>
+            </div>
+            <label for="">Email</label>
+            <input type="email" placeholder="test@gmail.com" name="" id="">
+            <label for="">Password</label>
+            <input type="password" placeholder="**********" name="" id="">
+            <label for="">Phone no</label>
+            <input type="Phone no" placeholder="+92-___________" name="" id="">
+            <label for="">Date of Birth</label>
+            <input type="date" name="" id="">
+            <label for="">Gender</label>
+            <input class="inline" type="radio" name="gender" id=""> Male
+            <input class="inline" type="radio" name="gender" id=""> Femal
+            <input class="inline" type="radio" name="gender" id=""> Others
+        </fieldset>
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for="">Heighest Qualification</label>
+            <select name="" id="">
+                <option value="">Select</option>
+                <option value="">Matric</option>
+                <option value="">Intermediate</option>
+                <option value="">Bachelors</option>
+            </select>
+            <label for="">Field of Study</label>
+            <select name="" id="">
+                <optgroup label="computer science">
+                    <option value="">Web Dev</option>
+                    <option value="">AI ML</option>
+                    <option value="">Data Science</option>
+                </optgroup>
+                <optgroup label="Engineering">
+                    <option value="">Software </option>
+                    <option value="">Electrical</option>
+                    <option value="">Mechanical</option>
+                </optgroup>
+            </select>
+            <label for="">Skills</label>
+            <input class="inline" type="checkbox" name="" id=""> HTML5
+            <input class="inline" type="checkbox" name="" id=""> CSS3
+            <input class="inline" type="checkbox" name="" id=""> JS
+            <input class="inline" type="checkbox" name="" id=""> C++
+            <input class="inline" type="checkbox" name="" id=""> React
+        </fieldset>
+
+        <fieldset>
+            <legend>Uploads & Preferences</legend>
+            <label for="">Upload Resume</label>
+            <input type="file" name="" id="">
+            <label for="">Available Time</label>
+            <input type="time" name="" id="">
+            <label for="">Experience level (0-10)</label>
+            <input type="range" min="0" max="10" id="">
+             
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="">About yourself</label>
+            <textarea rows="4" name="" id="" placeholder="something about you"></textarea>
+            <input type="checkbox" name="" id="">
+            I agree to terms and conditions
+        </fieldset>
+        <button type="Submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+
+</body>
+
+</html>
